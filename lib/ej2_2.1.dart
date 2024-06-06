@@ -46,13 +46,10 @@ class _NewHomePageState extends State<NewHomePage> {
       lastDate: DateTime(3000),
       builder: (BuildContext context, Widget? child) {
         return Theme(
-          // The below-written code will only affect the pop-up window.
           data: ThemeData(
-            // I tried to match my picker with your photo.
             useMaterial3: true,
             brightness: Brightness.dark,
             colorSchemeSeed: Colors.purple,
-            // Write your own code for customizing the date picker theme.
           ),
           child: child ?? const SizedBox(),
         );
